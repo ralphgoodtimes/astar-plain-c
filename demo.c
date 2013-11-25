@@ -112,7 +112,7 @@ int main( int argc, char *argv[])
       SolutionNavigator = NextInSolution;
       NextInSolution = dataMap[NextInSolutionPos].CameFrom;
     }
-    while ((dataMap[NextInSolutionPos].CameFrom->X != StartX) || (dataMap[NextInSolutionPos].CameFrom->Y != StartY));
+    while ((SolutionNavigator->X != StartX) || (SolutionNavigator->Y != StartY));
   }
   
   // Let's draw the map from the starting point.
